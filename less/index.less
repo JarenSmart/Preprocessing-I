@@ -183,7 +183,8 @@ header {
     height: auto;
     max-width: 500px;
     max-height: 400px;
-    .spacing();
+    margin: 2% 0 0 5%;
+    border-radius: 18px;
   }
 
   h1 {
@@ -261,10 +262,37 @@ header {
   font-size: 30px;
   .spacing();
   border-bottom: solid 0.5px #424874;
+
+  h2 {
+    .spacing();
+    border-bottom: solid 0.5px #424874;
+  }
+
+  table {
+    font-size: 25px;
+  }
+
+  th {
+    font-size: 28px;
+    padding: 1.5%;
+    border-bottom: solid 0.5px #424874;
+  }
+
+  td {
+    text-align: center;
+    padding: 1.5%;
+    border-top: solid 0.5px #a6b1e1;
+  }
+
+  .row1 {
+    background-color: #a6b1e1;
+  }
 }
 
 #footer {
   height: 10vh;
+  .spacing();
+  margin-top: 2%;
   background-color: @secondary-color;
 
   ul {
