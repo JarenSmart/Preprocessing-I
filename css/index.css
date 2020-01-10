@@ -1,1 +1,319 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.spacing {
+  margin: 0.5%;
+  padding: 1%;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: auto;
+  padding: 20px;
+  background-color: #cacfd6;
+}
+header {
+  height: auto;
+}
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header a {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0.5%;
+  padding: 1%;
+  text-align: center;
+}
+header a:hover {
+  color: #9cb2bc;
+}
+@media (max-width: 500px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  header a {
+    margin: 2%;
+    padding: 3%;
+  }
+}
+.intro {
+  width: 100%;
+  height: auto;
+  background-color: #dcd6f7;
+}
+.intro #charlotte {
+  width: auto;
+  height: auto;
+  max-width: 500px;
+  max-height: 400px;
+  margin: 2% 0 0 5%;
+  border-radius: 18px;
+}
+@media (max-width: 500px) {
+  .intro #charlotte {
+    margin-left: 14%;
+  }
+}
+.intro h1 {
+  font-size: 68px;
+  margin: 0.5%;
+  padding: 1%;
+}
+.intro h2 {
+  font-size: 20px;
+  margin: 0.5%;
+  padding: 1%;
+  margin-bottom: 2.5%;
+  border-bottom: solid 0.5px;
+}
+.intro .intro-bottom {
+  font-size: 20px;
+  margin: 0.5%;
+  padding: 1%;
+  margin-top: 2.5%;
+}
+.intro .intro-button {
+  color: black;
+  cursor: pointer;
+  margin: 0.5%;
+  padding: 1%;
+  font-size: 20px;
+  background-color: #a6b1e1;
+  border-radius: 5px;
+  margin: 1.5%;
+}
+.intro .intro-button:hover {
+  background-color: #424874;
+  color: white;
+  text-decoration: underline;
+}
+.middle-section {
+  height: auto;
+  margin: 0.5%;
+  padding: 1%;
+  display: flex;
+  justify-content: space-between;
+}
+.middle-section .middle-text-box {
+  width: 48%;
+}
+.middle-section .middle-text-box h2 {
+  font-size: 30px;
+  margin-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .middle-section .middle-text-box {
+    width: 100%;
+    margin: 0.5%;
+    padding: 1%;
+  }
+}
+.middle-section .middle-list-box {
+  width: 48%;
+}
+.middle-section .middle-list-box h2 {
+  font-size: 20px;
+  margin-bottom: 1%;
+}
+.middle-section .middle-list-box ul {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.middle-section .middle-list-box li {
+  border: solid 0.5px #424874;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .middle-section .middle-list-box {
+    width: 100%;
+    margin: 0.5%;
+    padding: 1%;
+  }
+}
+@media (max-width: 500px) {
+  .middle-section {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.work-history {
+  font-size: 30px;
+  margin: 0.5%;
+  padding: 1%;
+  border-bottom: solid 0.5px #424874;
+}
+.work-history h2 {
+  margin: 0.5%;
+  padding: 1%;
+  border-bottom: solid 0.5px #424874;
+}
+.work-history table {
+  font-size: 25px;
+}
+.work-history th {
+  font-size: 28px;
+  padding: 1.5%;
+  border-bottom: solid 0.5px #424874;
+}
+.work-history td {
+  text-align: center;
+  padding: 1.5%;
+  border-top: solid 0.5px #a6b1e1;
+}
+.work-history .row1 {
+  background-color: #a6b1e1;
+}
+#footer {
+  height: auto;
+  margin: 0.5%;
+  padding: 1%;
+  margin-top: 2%;
+  background-color: #a6b1e1;
+}
+#footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#footer li {
+  text-align: center;
+  margin: 0.5%;
+  padding: 1%;
+}
